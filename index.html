@@ -1,0 +1,110 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="profile">
+                <img src="ryn.jpg" alt="Profile Picture" onclick="location.href='login.html'">
+                <button class="login-button" onclick="location.href='login.html'">Login</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Plan Your Next Adventure</h1>
+        <button onclick="startPlanning()">Start Planning</button>
+    </section>
+
+    <section class="destinations">
+        <h2>Popular Destinations</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="beach.jpg" alt="Destination 1" onclick="location.href='planning.html'">
+                <p>Beautiful Beach</p>
+            </div>
+            <div class="card">
+                <img src="mountains.jpg" alt="Destination 2" onclick="location.href='planning.html'">
+                <p>Mountain Escape</p>
+            </div>
+            <div class="card">
+                <img src="city.jpg" alt="Destination 3" onclick="location.href='planning.html'">
+                <p>City Lights</p>
+            </div>
+        </div>
+    </section>
+	
+	    <section class="destinations">
+        <div class="cards">
+            <div class="card">
+                <img src="monuments.jpg" alt="Destination 1" onclick="location.href='planning.html'">
+                <p>Monuments</p>
+            </div>
+            <div class="card">
+                <img src="lake park.jpg" alt="Destination 2" onclick="location.href='planning.html'">
+                <p>Lake Parks</p>
+            </div>
+            <div class="card">
+                <img src="countryside.jpg" alt="Destination 3" onclick="location.href='planning.html'">
+                <p>Country Sides</p>
+            </div>
+        </div>
+    </section>
+	
+		    <section class="destinations">
+        <div class="cards">
+            <div class="card">
+                <img src="winter.jpg" alt="Destination 1" onclick="location.href='planning.html'">
+                <p>Winter Sport Areas</p>
+            </div>
+            <div class="card">
+                <img src="wonderlands.jpg" alt="Destination 2" onclick="location.href='planning.html'">
+                <p>Wonder lands</p>
+            </div>
+            <div class="card">
+                <img src="blooms.jpg" alt="Destination 3" onclick="location.href='planning.html'">
+                <p>Bloomy worlds</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="details">
+        <h2>Why Choose Us?</h2>
+        <ul>
+            <li>Personalized Recommendations</li>
+            <li>Budget Management Tools</li>
+            <li>Comprehensive Itineraries</li>
+        </ul>
+    </section>
+
+    <section class="testimonials">
+        <h2>What Our Users Say</h2>
+        <div class="testimonial">
+            <p>"This planner made my trip so much easier! Highly recommend."</p>
+        </div>
+        <div class="testimonial">
+            <p>"I saved so much money using the budget tools. Fantastic!"</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Reyan Sher semester Final project</p>
+    </footer>
+
+    <script>
+        function startPlanning() {
+            window.location.href = 'planning.html';
+        }
+    </script>
+</body>
+</html>

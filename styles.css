@@ -1,0 +1,432 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 1em 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff5733;
+}
+
+/* pfp and login */
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.profile .login-button {
+    padding: 12px 30px;
+    font-size: 1.1em;
+    background: linear-gradient(45deg, #ff5733, #ff784e);
+    border: none;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.profile .login-button:hover {
+    background: linear-gradient(45deg, #ff784e, #ff5733);
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.profile .login-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 87, 51, 0.5);
+}
+
+
+
+
+/*main page (hero section)*/
+.hero {
+    text-align: center;
+    background-image: url('travel.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    margin-top: 20px;
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.hero button:hover {
+    background-color: #ff784e;
+    transform: scale(1.05);
+}
+
+
+/* apnay se banaye huay destinations */
+.destinations {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.destinations h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card p {
+    padding: 15px;
+    font-size: 1.2em;
+    margin: 0;
+    color: #555;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* why choose us wala section */
+.details {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.details h2 {
+    font-size: 2.5em;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+}
+
+.details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: left;
+}
+
+.details ul li {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #555;
+    padding-left: 25px;
+    position: relative;
+}
+
+.details ul li::before {
+    content: '\2022';
+    color: #ff5733;
+    font-weight: bold;
+    display: inline-block;
+    width: 20px;
+    margin-left: -25px;
+}
+
+
+
+/* jhooti baten */
+.testimonials {
+    padding: 50px 20px;
+    background-color: white;
+}
+
+.testimonials h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+    text-align: center;
+}
+
+.testimonial {
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+    font-style: italic;
+    color: #555;
+    text-align: center;
+}
+
+
+
+
+
+
+/* contact page */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+
+.contact-box {
+    background-color: #fff;
+    width: 100%;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    padding: 40px;
+}
+
+.contact-info {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #0066cc;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #004c99;
+}
+
+
+
+
+
+
+/* about page */
+.hero-section {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.hero-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-section .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hero-section .overlay h1 {
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* pic and text(about page) */
+.company-description {
+    padding: 40px 20px;
+}
+
+.company-description p {
+    font-size: 18px;
+    color: #333;
+}
+
+
+.container {
+    padding: 60px 20px;
+}
+
+h3 {
+    font-size: 28px;
+    color: #333;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+}
+
+img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.social-media {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* planning page */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.stats-section h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.stats-section p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #555;
+}
+
+.planning-section h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.list-group-item {
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.list-group-item:hover {
+    background-color: #f0f0f0;
+}
+
+#nightsAndFood {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+
+#budgetMessage {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+
+
+
+footer {
+    text-align: center;
+    background-color: #1a1a1a;
+    color: white;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
